@@ -1,0 +1,22 @@
+{
+  "name": "upfind-cli",
+  "version": "1.0.0",
+  "bin": {"upfind": "dist/cli.js"},
+  "main": "dist/cli.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "tsc",
+    "lint": "tslint -c ../../../tslint.json lib/*",
+    "clean": "rm -rf dist node_modules typings test/typings",
+    "install": "tsd install",
+    "test": "echo \"no tests\""
+  },
+  "devDependencies": {
+    "tslint": "^3.2.1",
+    "typescript": "^1.7.5"
+  },
+  "dependencies": {
+    "upfind": "~1.0.0",
+    "docopt": "^0.6.2"
+  }
+}
